@@ -1,0 +1,201 @@
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #d8d5d5;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* this is header section */
+header{
+    text-align: center;
+    width: 87%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a,.fa-shopping-cart,.fa-search{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left:30px;
+}
+/* here end header */
+main{
+    width:87%;
+    margin: 0 auto;
+  
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.first-section{
+    justify-content: right;
+}
+.first-section h1{
+    font-family: sans-serif;
+    font-size: 2em;
+}
+.first-section button{
+    background-color: crimson;
+    border-radius: 18px;
+    color: white;
+    padding: 8px;
+    border: none;
+     
+}
+.first-section img{
+    width: 250px;
+    padding: 30px;
+    height:250px;
+    background-size: 350px;
+    background-position: right;
+    background-image: url(images/Circle-design.png);
+    background-repeat: no-repeat;
+    
+}
+.first-section img:hover{
+    transform: scale(1.1) rotate(360deg);
+    transition:4s;
+}
+.company-logo{
+    width: 80%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 80px;
+}
+.logo img:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+/* populer collection */
+.popular{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+/* start article */
+article{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 80%;
+    grid-gap:14px;
+    row-gap: 15px;
+    margin-bottom: 50px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: floralwhite;
+    border-radius: 5px;padding: 5px;
+}
+.product img{
+    max-width: 200px;   
+}
+.description{
+    max-width: 200px;
+}
+.product h1{
+    font-family: sans-serif;
+    margin: 4px 0px 4px;
+}
+.product span{
+    font-weight: bold;
+}
+#description{
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0px 0px 0px 0px;
+}
+.fa-star,.fa-star-half-alt{
+    font-size: 10px;
+    color: #ff6600;
+    margin: 0%;
+}
+#rating{
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-left: 5px;
+}
+.see-btn{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 80px;
+}
+.see-btn a,.fa-arrow-right{
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+}
+.see-btn .fa-arrow-right{
+    margin-left: 2px;
+}
+/* open section two */
+.second{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.second .section-one img{
+    height: 250px;
+    width:300px;
+    border-radius: 10px;
+    margin-right: 60px;    
+}
+.second .section-two{
+    font-family: sans-serif;
+}
+.second .section-two button{
+     background-color: crimson;
+     border-radius: 8px;
+     color: white;
+     border: none;
+     padding:8px;
+}
+
+footer{
+    height: 150px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}footer h3{
+    padding-top: 25px;
+    font-family: sans-serif;
+}
+footer p{
+    font-size: 10px;
+}
+.social-site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-instagram,.fa-facebook-square,.fa-youtube,.fa-twitter-square{
+    margin: 0px 10px 0px 10px;
+}
+.social-site i:hover{
+    transform: scale(1.5);
+}
