@@ -129,6 +129,7 @@ article{
     color: #ff6600;
     margin: 0%;
 }
+.icon-rate{margin-top: 0px;margin-bottom: 2px;}
 #rating{
   font-size: 12px;
   font-weight: bold;
@@ -202,14 +203,23 @@ footer p{
 /* .......................... */
 @media screen and (max-width:460px){
  body{
-     /* width:100%; */
-    
+    width:100%;
+    margin: 0px;
+     
  }
- header{display: block;
+ header{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #201b16;
+    
+     text-align: center;
      width: 100%;
-     height: 40px;
-     display:block;
-     color: teal;
+     color: crimson;
+}
+    .header h2{
+        font-size:2em;
+        margin: 0px;
     }
     header a,.fa-shopping-cart,.fa-search{
         display:none;
@@ -218,9 +228,8 @@ footer p{
       display: inline-block;
     }
     .first-section h1{
-        padding: 10px;
         font-family: sans-serif;
-        font-size:1.5em;
+        font-size:1.3em;
     }
     .first-section button{
         background-color: crimson;
@@ -299,18 +308,20 @@ footer p{
          margin-bottom: 0%;
     }
     footer{
-        height: 120px;
+        height:55px;
         background-color: black;
         color: white;
         text-align: center;
+        padding: 1px;
     }
 footer h3{
-    padding-top:5px;
     font-family: sans-serif;
-    margin-bottom: 0%;
+    font-size: 1em;
+    margin: 0px;
 }
 footer p{
-    font-size: 10px;
+    font-size:10px;
+    margin: 0px;
 }
 }
 
