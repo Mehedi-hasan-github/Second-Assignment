@@ -8,10 +8,8 @@ body{
 }
 /* this is header section */
 header{
-    text-align: center;
-    width: 87%;
-    margin: 0 auto;
-    height: 100px;
+    width:100%;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +87,6 @@ section{
 }
 /* start article */
 article{
-    display: flex;
     justify-content: center;
     align-items: center;
     display: grid;
@@ -139,7 +136,7 @@ article{
   margin-left: 5px;
 }
 .see-btn{
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     justify-content: flex-end;
 }
@@ -181,14 +178,13 @@ footer{
     background-color: black;
     color: white;
     text-align: center; 
-    padding-top: 8px;
+    padding: 8px;
 }footer h3{
    
     font-family: sans-serif;
 }
 footer p{
     font-size: 10px;
-    margin-bottom: 5px;
 }
 .social-site{
     display: flex;
@@ -308,7 +304,7 @@ footer p{
         color: white;
         text-align: center;
     }
-}footer h3{
+footer h3{
     padding-top:5px;
     font-family: sans-serif;
     margin-bottom: 0%;
@@ -320,6 +316,166 @@ footer p{
 
 /* end the mobile query */
 /* now tab media query */
-@media screen and (min-width:460px) and(max-width:786px){
-
+@media screen and (min-width:461px) and (max-width:780px){
+    body{
+        margin: 0%;
+        background-color: #fff;
+    }
+    header{
+        display: visible;
+    }
+    header{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        height:70px;
+        background-color:teal;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header h2{
+        margin: 0%;
+    }
+    
+    header a,.fa-shopping-cart,.fa-search{
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+    }
+    main{
+        width:85%;
+        margin: 0 auto;     
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-section{
+        justify-content: ;
+    }
+    .first-section h1{
+        font-family: sans-serif;
+        font-size: 1.5em;
+    }
+    .first-section button{
+        background-color: crimson;
+        border-radius: 12px;
+        color: white;
+        padding: 5px;
+        border: none;
+         
+    }
+    .first-section img{
+        width: 250px;
+        padding: 30px;
+        height:250px;
+        background-size: 300px;
+        background-position: center;
+        background-image: url(images/Circle-design.png);
+        background-repeat: no-repeat;
+        
+    }
+    .company-logo{
+        width: 80%;
+        margin: 0 auto;
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+    .popular{
+        display: block;
+        text-align: center;    
+    }
+    article{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-gap:10px; */
+        row-gap: 15px; 
+    }
+    
+    .product{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        background-color: #d3d2d1;
+        border-radius: 8px;
+        padding: 12px; 
+    }
+    .second{
+        width: 100%;
+        display: flex;
+        justify-content: center;    
+    }
+    .second .section-one img{
+        height: 250px;
+        width:100%;
+        border-radius: 10px;   
+    }
+    .second .section-two{
+        font-family: sans-serif;
+    }
+    .second .section-two button{
+         background-color: crimson;
+         border-radius: 5px;
+         color: white;
+         border: none;
+         padding:5px;
+    }
+    .section-two h1{
+        font-size: 1.5em;
+    }
+    .section-two p{
+        font: size 14px;
+        font-family:sans-serif;
+    }
+    footer{
+        display: block;
+        height:50px;
+        background-color: black;
+        color: white;
+        text-align: center; 
+        padding: 8px;
+    }
+    footer h3{
+        font-size: 1em;
+        margin: 0px;
+        font-family: sans-serif;
+    }
+    footer p{
+        margin: 0px;
+        font-size:8px;
+    }
+}
+/* closed tab media query */
+@media screen and (min-width:781px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        width: 100%;
+        height: 60px;
+        display: visible;
+        background-color:#000;
+        margin-bottom: 20px;
+    } 
+    .header h2{
+        color: white;
+    } 
+    footer{
+        height: 55px;
+    }
+    footer h3{
+        margin:0px;
+        font-size: 1em;
+    }
+    footer p{
+        margin: 0px;
+    }
 }
