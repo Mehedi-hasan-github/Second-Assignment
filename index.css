@@ -2,7 +2,7 @@ body{
     height: 100%;
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
-    background-color: #d8d5d5;
+    background-color: #fff;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -20,7 +20,7 @@ header{
 
 header a,.fa-shopping-cart,.fa-search{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 20px;
     margin-left:30px;
 }
@@ -56,7 +56,7 @@ section{
     width: 250px;
     padding: 30px;
     height:250px;
-    background-size: 350px;
+    background-size: 300px;
     background-position: right;
     background-image: url(images/Circle-design.png);
     background-repeat: no-repeat;
@@ -85,34 +85,36 @@ section{
 /* populer collection */
 .popular{
     display: block;
-    text-align: center;
-    margin-top: 50px;
+    text-align: center;    
 }
 /* start article */
 article{
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 80%;
     grid-gap:14px;
     row-gap: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 50px; 
 }
 
 .product{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
-    background-color: floralwhite;
-    border-radius: 5px;padding: 5px;
+    background-color: #d3d2d1;
+    border-radius: 8px;
+    padding: 12px; 
 }
 .product img{
     max-width: 200px;   
 }
 .description{
-    max-width: 200px;
+    max-width: 200px;    
 }
+
 .product h1{
     font-family: sans-serif;
     margin: 4px 0px 4px;
@@ -140,14 +142,13 @@ article{
     width: 80%;
     display: flex;
     justify-content: flex-end;
-    margin-left: 80px;
 }
-.see-btn a,.fa-arrow-right{
+.see-btn a,.fa-long-arrow-alt-right{
     text-decoration: none;
     color: crimson;
     font-weight: bold;
 }
-.see-btn .fa-arrow-right{
+.see-btn .fa-long-arrow-alt-right{
     margin-left: 2px;
 }
 /* open section two */
@@ -176,12 +177,13 @@ article{
 }
 
 footer{
-    height: 150px;
+    height: 120px;
     background-color: black;
     color: white;
-    text-align: center;
+    text-align: center; 
+    padding-top: 8px;
 }footer h3{
-    padding-top: 25px;
+   
     font-family: sans-serif;
 }
 footer p{
@@ -203,15 +205,14 @@ footer p{
 /* .......................... */
 @media screen and (max-width:460px){
  body{
-     width:100%;
+     /* width:100%; */
     
  }
  header{display: block;
      width: 100%;
-     background-color: darkgrey;
      height: 40px;
      display:block;
-     margin: 0 auto;
+     color: teal;
     }
     header a,.fa-shopping-cart,.fa-search{
         display:none;
@@ -220,14 +221,13 @@ footer p{
       display: inline-block;
     }
     .first-section h1{
-
+        padding: 10px;
         font-family: sans-serif;
-        font-size:20px;
-        text-align: left;
+        font-size:1.5em;
     }
     .first-section button{
-        background-color: #040e0e;
-        color: red;
+        background-color: crimson;
+        color: white;
         /* margin-bottom: 20px; */
     }
     .first-section img{
@@ -248,6 +248,7 @@ footer p{
         /* margin-top: 50px; */
     }
     .company-logo{
+       height: 0%;
        display: flex;
        flex-direction: column;
        justify-content: center;       
@@ -284,6 +285,7 @@ footer p{
         justify-content: center;    
     }
     .second .section-one img{
+        margin: 0%;
         height: 250px;
         width:250px;
         border-radius: 10px;   
@@ -314,6 +316,7 @@ footer p{
     font-size: 10px;
 }
 }
+
 /* end the mobile query */
 /* now tab media query */
 @media screen and (min-width:460px) and(max-width:786px){
